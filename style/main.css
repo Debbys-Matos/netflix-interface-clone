@@ -1,0 +1,127 @@
+:root{
+  --red:#E50914;
+  --black: #141414;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*base elements*/
+
+body{
+    background: var(--black);
+    font-family: 'Gothan';
+    color: white;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:7px;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--red);
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*main-movie*/
+
+
+.main-movie{
+    font-size: 16px;
+    background:linear-gradient(rgba(80, 75, 75, 0.5), rgba(80, 75, 75, 0.5)100%), url('../Img/Parasite.jpg');
+
+
+    height: 550px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 40%;
+}
+
+.title{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Gothan';
+}
+
+.button1{
+    background-color: #E50914;
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.button2{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: -5s ease all;
+}
+
+.button1:hover {
+    background-color: white;
+    color:#E50914
+}
+
+.button2:hover {
+    background-color: white;
+    color: #141414;
+}
+
+.buttons i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 10px;
+}
+
+.main-movie .container {
+    width: 80%;
+}
+
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display:block;
+    cursor: pointer;
+}
+
+.movies-carousel{
+    margin-top:5px;
+}
